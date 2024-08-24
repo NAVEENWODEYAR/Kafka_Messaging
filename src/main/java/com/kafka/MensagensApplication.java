@@ -7,6 +7,6 @@ public class MensagensApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MensagensApplication.class, args);
-		System.out.println("\n*KAFKA_MESSAGING*\n");
+		System.out.println("\n*KAFKA*\n");
 	}
 }
