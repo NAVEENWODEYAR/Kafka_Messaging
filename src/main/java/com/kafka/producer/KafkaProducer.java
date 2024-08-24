@@ -1,5 +1,6 @@
 package com.kafka.producer;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +15,9 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 public class KafkaProducer {
 	
+	@Value("${spring.kafka.topic.name}")
+	private String kafkaTopicName;
+	
 	private KafkaTemplate<String, String> kafkaTemplate;
 	
 	public KafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
@@ -22,7 +26,7 @@ public class KafkaProducer {
 	
 	public void sendMessage(String msg) {
 		log.info(String.format("Message sent %s", msg));
-		kafkaTemplate.send("mensagensTopic",msg);
+		kafkaTemplate.send(kafkaTopicName,msg);
 	}
 
 }
