@@ -38,6 +38,6 @@ public class JsonKafkaProducer {
 									.build();
 		kafkaTemplate.send(message);
 		log.info(kafkaTemplate.toString());
-		log.info(String.format("Message sent -> %s",data.toString()));
+		log.info(String.format("Message sent -> %s", data));
 	}
 }
