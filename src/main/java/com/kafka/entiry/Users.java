@@ -9,9 +9,6 @@ import lombok.NoArgsConstructor;
  * @date 24-Aug-2024
  * @project Mensagens
  */
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Users {
 
 	private int userId;

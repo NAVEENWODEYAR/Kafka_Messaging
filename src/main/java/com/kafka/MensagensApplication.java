@@ -10,3 +10,4 @@ public class MensagensApplication {
 		System.out.println("\n*KAFKA*\n");
 	}
 }
+ 
