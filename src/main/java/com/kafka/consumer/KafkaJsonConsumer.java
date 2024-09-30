@@ -21,8 +21,6 @@ public class KafkaJsonConsumer {
 	public void consumeMessage(Users user) {
 		log.info(String.format("JSON message received ->%s", user.toString()));
 		System.out.println("User data,"+user.toString());
-		log.error(String.format("JSON message received ->%s", user.toString()));
-
-		
+		log.error(String.format("JSON message received ->%s", user.toString()));	
 	}
 }

@@ -17,7 +17,7 @@ public class SwaggerConfig {
     public OpenAPI openAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("ASFALEA[ασφάλεια,Greek]~~[SECURITY]")
+                        .title("Mensangens[ασφάλεια,Greek]~~[Mesaging]")
                         .description("Spring Boot demo project for spring_security")
                         .version("1.0")
                         .contact(new Contact()

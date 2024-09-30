@@ -35,6 +35,7 @@ public class MessageController {
 
 	@GetMapping("/publish")
 	public ResponseEntity<Object>publish(@RequestParam("msg") String msg){
+		log.warn("Publishing the message");
 		kafkaProducer.sendMessage(msg);
 		log.info("Producer published the mesage,");
 		return ResponseEntity.ok("Message published successfully,");
