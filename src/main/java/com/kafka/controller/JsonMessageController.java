@@ -18,7 +18,7 @@ import com.kafka.producer.JsonKafkaProducer;
  * @project Mensagens
  */
 @RestController
-@RequestMapping("/v1/json")
+@RequestMapping("/json")
 public class JsonMessageController {
 	
 	private static final Logger log = LoggerFactory.getLogger(JsonMessageController.class);

@@ -12,14 +12,11 @@ import org.springframework.stereotype.Service;
 
 import com.kafka.entiry.Users;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @author Naveen K Wodeyar
  * @date 24-Aug-2024
  * @project Mensagens
  */
-@Slf4j
 @Service
 public class JsonKafkaProducer {
 	
