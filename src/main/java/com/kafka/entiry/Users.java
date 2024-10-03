@@ -2,10 +2,6 @@ package com.kafka.entiry;
 
 import java.util.Objects;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 /**
  * @author Naveen K Wodeyar
  * @date 24-Aug-2024
